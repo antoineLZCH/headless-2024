@@ -15,10 +15,15 @@ defineProps({
     <h3 class="my-0">
       {{ recipe.title }}
     </h3>
-    <p class="my-0">
+    <div class="flex items-center gap-x-2">
+      <span v-for="tag in recipe.tags" :key="tag.id" class="py-1 px-2 bg-gray-200">
+        {{ tag.name }}
+      </span>
+    </div>
+    <p class="my-0 truncate">
       {{ recipe.description }}
     </p>
-    <NuxtLink :to="`/recettes/${recipe.slug}`">
+    <NuxtLink :to="`/recettes/${recipe.slug}`" prefetch>
       Voir la recette
     </NuxtLink>
   </li>

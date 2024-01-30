@@ -7,9 +7,9 @@
     <list default="true" id="cdbd71d9-ded8-4194-ad24-f2de361770eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/app/components/RecipeCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/components/RecipeCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/components/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/components/TheHeader.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/app/models/recipes.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/models/recipes.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/app/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/app/pages/recettes/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/pages/recettes/[slug].vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/app/stores/search.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/stores/search.store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +107,7 @@
       <workItem from="1706457962985" duration="5109000" />
       <workItem from="1706463955992" duration="41000" />
       <workItem from="1706464004451" duration="1959000" />
-      <workItem from="1706602909191" duration="2787000" />
+      <workItem from="1706602909191" duration="7903000" />
     </task>
     <servers />
   </component>

@@ -4,11 +4,11 @@ export interface IRecipe {
   description: string
   slug: string
   publishedAt: string
-  tags: Tag[]
+  tags: ITag[]
   image: Image
 }
 
-export interface Tag {
+export interface ITag {
   id: number
   name: string
   slug: string
@@ -33,4 +33,8 @@ export interface RecipesData {
       total: number
     }
   }
+}
+
+export interface RecipeData {
+  data: IRecipe
 }
