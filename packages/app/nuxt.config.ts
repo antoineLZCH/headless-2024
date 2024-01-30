@@ -1,9 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  routeRules: {
-    '/recettes/**': { isr: true },
-  },
   css: ['@unocss/reset/normalize.css', '~/assets/css/main.css'],
   modules: ['@unocss/nuxt', '@nuxt/image', '@nuxtjs/strapi', '@pinia/nuxt'],
   strapi: {

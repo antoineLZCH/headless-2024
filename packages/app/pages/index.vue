@@ -28,7 +28,11 @@ function addTag(tag: string) {
           <h2>Filtres de recherche :</h2>
           <div class="form-group flex flex-col gap-2" role="search">
             <label for="search">Chercher une recette :</label>
-            <input id="search" v-model="search.query" class="px-4 py-2" type="search">
+            <input
+              id="search" v-model="search.query"
+              class="px-4 py-2 border-2 rounded-lg border-gray-500 drop-shadow-none"
+              type="search"
+            >
           </div>
           <div class="form-group flex flex-col items-start">
             <p>Filtrer par tag :</p>
