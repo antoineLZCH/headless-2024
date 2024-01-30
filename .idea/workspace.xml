@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cdbd71d9-ded8-4194-ad24-f2de361770eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/app/components/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/components/TheHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/app/pages/exemple-recherche.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/app/pages/start.vue" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,9 +86,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/app/public" />
+      <recent name="$PROJECT_DIR$/packages/app/assets/images" />
       <recent name="$PROJECT_DIR$/packages/app" />
       <recent name="$PROJECT_DIR$/packages/app/src" />
-      <recent name="$PROJECT_DIR$/packages/app/public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -104,7 +106,7 @@
       <workItem from="1706457962985" duration="5109000" />
       <workItem from="1706463955992" duration="41000" />
       <workItem from="1706464004451" duration="1959000" />
-      <workItem from="1706602909191" duration="18990000" />
+      <workItem from="1706602909191" duration="22691000" />
     </task>
     <servers />
   </component>
