@@ -1,19 +1,18 @@
 import Fuse from 'fuse.js'
-import type { IRecipe, RecipesData } from '~/models/recipes.model'
+import type { IRecipe, ITag, RecipesData } from '~/models/recipes.model'
 
 export const useSearchStore = defineStore('search', () => {
   const { find } = useStrapi4()
 
-  const { data: recipes, pending } = useAsyncData('recipes', () => find<RecipesData>('recipes', { populate: '*' }),
-  )
+  const { data: recipes, pending } = useAsyncData('recipes', () => find<RecipesData>('recipes', { populate: '*' }))
   const query = ref('')
   const queryTags = ref<string[]>([])
   const elements = reactive<IRecipe[]>(recipes.value?.data || [])
-  const keys = ['title', 'description']
+  const keys = ['title', 'description', 'ingredients.name']
 
   const fuse = computed(() => new Fuse(Array.from(elements), {
     keys,
-    threshold: 0.4,
+    threshold: 0.3,
   }))
 
   const sortedElements = computed(() => {
@@ -32,7 +31,7 @@ export const useSearchStore = defineStore('search', () => {
     if (!queryTags.value.length)
       return results.value
     return results.value.filter((recipes) => {
-      return recipes.tags.some(tag => queryTags.value.includes(tag.slug))
+      return recipes.tags.some((tag: ITag) => queryTags.value.includes(tag.slug))
     })
   })
 

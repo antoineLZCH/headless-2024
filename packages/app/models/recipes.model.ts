@@ -6,6 +6,20 @@ export interface IRecipe {
   publishedAt: string
   tags: ITag[]
   image: Image
+  ingredients: IIngredient[]
+  steps: IStep[]
+}
+
+export interface IIngredient {
+  id: number
+  name: string
+  quantity: string
+}
+
+export interface IStep {
+  id: number
+  title: string
+  description: string
 }
 
 export interface ITag {

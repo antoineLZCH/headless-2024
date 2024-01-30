@@ -29,6 +29,23 @@ const { data: recipe, pending } = useAsyncData(
         </span>
       </div>
       <p>{{ recipe.data.description }}</p>
+      <div class="flex flex-col md:flex-row">
+        <div class="flex flex-col w-full md:w-1/4">
+          <h2 class="mb-0">
+            Ingrédients
+          </h2>
+          <ul class="list-none gap-2 p-0">
+            <li
+              v-for="ingredient in recipe.data.ingredients" :key="ingredient.id"
+            >
+              <p class="font-bold">
+                {{ ingredient.name }}
+              </p>
+              <p>{{ ingredient.quantity }}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </template>
   </div>
 </template>

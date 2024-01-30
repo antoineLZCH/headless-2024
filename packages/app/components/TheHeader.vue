@@ -29,6 +29,7 @@ const links = [
           </li>
         </ul>
       </div>
+      <hr>
     </div>
   </nav>
 </template>

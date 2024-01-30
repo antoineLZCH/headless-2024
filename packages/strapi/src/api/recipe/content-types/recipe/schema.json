@@ -31,12 +31,22 @@
       "inversedBy": "recipes"
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ingredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipes.ingredients"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipes.etapes"
     }
   }
 }

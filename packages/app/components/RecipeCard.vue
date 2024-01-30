@@ -20,7 +20,7 @@ defineProps({
         {{ tag.name }}
       </span>
     </div>
-    <p class="my-0 truncate">
+    <p class="truncate">
       {{ recipe.description }}
     </p>
     <NuxtLink :to="`/recettes/${recipe.slug}`" prefetch>

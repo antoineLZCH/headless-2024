@@ -20,7 +20,7 @@ function addTag(tag: string) {
 <template>
   <div class="container">
     <div v-if="!search.pending && search.sortedByTags" class="flex flex-col gap-y-4">
-      <h1 class="my-0">
+      <h1 class="mb-0">
         Recettes animales
       </h1>
       <div class="flex flex-col lg:flex-row gap-4">
