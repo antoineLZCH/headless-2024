@@ -1,14 +1,14 @@
+<script lang="ts" setup>
+import mdStart from '../contents/start.md?raw'
+</script>
+
 <template>
   <section class="font-sans w-2/3 mx-auto">
     <div class="container">
-      <div class="md-container" v-html="$md.render(mdStart)"></div>
+      <div class="md-container" v-html="$md.render(mdStart)" />
     </div>
   </section>
 </template>
-
-<script lang="ts" setup>
-import mdStart from '~/contents/start.md?raw'
-</script>
 
 <style>
 .md-container pre {

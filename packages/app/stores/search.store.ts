@@ -1,15 +1,16 @@
 import Fuse from 'fuse.js'
+import type { RecipesData, IRecipe } from '~/models/recipes.model'
 
 export const useSearchStore = defineStore('search', () => {
   const { find } = useStrapi4()
 
   const { data: recipes, pending, error } = useAsyncData('recipes',
-      () => find('recipes', {populate: '*'})
+      () => find<RecipesData>('recipes', {populate: '*'})
   )
 
   const query = ref('')
   // TODO: Replace any with your Recipe type and change elements
-  const elements = reactive<Set<any>>(recipes.value?.data || [])
+  const elements = reactive<IRecipe[]>(recipes.value?.data || [])
   const keys = ['title', 'ingredients', 'tags']
 
   const fuse = computed(() => new Fuse(Array.from(elements), {
