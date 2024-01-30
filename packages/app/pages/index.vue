@@ -14,10 +14,10 @@ const search = useSearchStore()
         <label for="search">Chercher une recette</label>
         <input id="search" v-model="search.query" class="px-4 py-2" type="search">
       </div>
-      <template v-if="search.results">
+      <template v-if="search.sortedResults">
         <ul class="list-none p-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <RecipeCard
-            v-for="recipe in search.results"
+            v-for="recipe in search.sortedResults"
             :key="recipe.id"
             :recipe="recipe"
           />

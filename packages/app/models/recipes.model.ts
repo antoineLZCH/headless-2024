@@ -10,8 +10,8 @@ export interface IRecipe {
 
 export interface Tag {
   id: number
-  name: string;
-  slug: string;
+  name: string
+  slug: string
 }
 
 export interface Image {

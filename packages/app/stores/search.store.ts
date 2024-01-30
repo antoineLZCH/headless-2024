@@ -1,21 +1,18 @@
 import Fuse from 'fuse.js'
-import type { RecipesData, IRecipe } from '~/models/recipes.model'
+import type { IRecipe, RecipesData } from '~/models/recipes.model'
 
 export const useSearchStore = defineStore('search', () => {
   const { find } = useStrapi4()
 
-  const { data: recipes, pending, error } = useAsyncData('recipes',
-      () => find<RecipesData>('recipes', {populate: '*'})
+  const { data: recipes, pending } = useAsyncData('recipes', () => find<RecipesData>('recipes', { populate: '*' }),
   )
-
   const query = ref('')
-  // TODO: Replace any with your Recipe type and change elements
   const elements = reactive<IRecipe[]>(recipes.value?.data || [])
-  const keys = ['title', 'ingredients', 'tags']
+  const keys = ['title', 'description']
 
   const fuse = computed(() => new Fuse(Array.from(elements), {
     keys,
-    threshold: 0.2,
+    threshold: 0.4,
   }))
 
   const results = computed(() => {
@@ -24,5 +21,11 @@ export const useSearchStore = defineStore('search', () => {
     return [...fuse.value.search(query.value).map(r => r.item)]
   })
 
-  return { query, results, elements, pending }
+  const sortedResults = computed(() => {
+    return results.value.sort((a, b) => {
+      return a.publishedAt > b.publishedAt ? -1 : 1
+    })
+  })
+
+  return { query, results, elements, pending, sortedResults }
 })

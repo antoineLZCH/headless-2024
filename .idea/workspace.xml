@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdbd71d9-ded8-4194-ad24-f2de361770eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/app/public/possum.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/src/components/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/components/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/src/contents/start.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/contents/start.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/src/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/src/mocks/recipes.mock.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/mocks/recipes.mock.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/src/models/search.model.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/src/pages/exemple-recherche.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/pages/exemple-recherche.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/src/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/src/pages/recettes/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/pages/recettes/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/src/pages/recettes/[slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/pages/recettes/[slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/src/pages/start.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/pages/start.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/src/plugins/markdownit.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/plugins/markdownit.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/src/stores/search.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/stores/search.store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/app/components/RecipeCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/components/RecipeCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/app/components/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/components/TheHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/app/models/recipes.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/models/recipes.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/app/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/app/stores/search.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/stores/search.store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +107,7 @@
       <workItem from="1706457962985" duration="5109000" />
       <workItem from="1706463955992" duration="41000" />
       <workItem from="1706464004451" duration="1959000" />
-      <workItem from="1706602909191" duration="746000" />
+      <workItem from="1706602909191" duration="2787000" />
     </task>
     <servers />
   </component>
