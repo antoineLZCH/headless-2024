@@ -15,8 +15,5 @@ export default defineNuxtConfig({
   },
   image: {
     quality: 80,
-    strapi: {
-      baseURL: '',
-    },
   },
 })

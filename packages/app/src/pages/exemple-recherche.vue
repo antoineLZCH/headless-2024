@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 const search = useSearchStore()
+
+
+
 </script>
 
 <template>

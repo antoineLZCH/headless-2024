@@ -1,15 +1,16 @@
 import Fuse from 'fuse.js'
-import { recipesMock } from '~/mocks/recipes.mock'
 
 export const useSearchStore = defineStore('search', () => {
-  const search = ref('')
-  // TODO: Replace any with your Recipe type and change elements
-  const elements = reactive<Array<any>>(recipesMock)
-  const keys = ['title', 'ingredients', 'tags']
+  const { find } = useStrapi4()
 
-  const setElements = (newElements: any) => {
-    elements.push(...newElements)
-  }
+  const { data: recipes, pending, error } = useAsyncData('recipes',
+      () => find('recipes', {populate: '*'})
+  )
+
+  const query = ref('')
+  // TODO: Replace any with your Recipe type and change elements
+  const elements = reactive<Set<any>>(recipes.value?.data || [])
+  const keys = ['title', 'ingredients', 'tags']
 
   const fuse = computed(() => new Fuse(Array.from(elements), {
     keys,
@@ -17,10 +18,10 @@ export const useSearchStore = defineStore('search', () => {
   }))
 
   const results = computed(() => {
-    if (!search.value)
+    if (!query.value)
       return Array.from(elements)
-    return [...fuse.value.search(search.value).map(r => r.item)]
+    return [...fuse.value.search(query.value).map(r => r.item)]
   })
 
-  return { search, results, setElements }
+  return { query, results, elements, pending }
 })
