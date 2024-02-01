@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cdbd71d9-ded8-4194-ad24-f2de361770eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/components/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/components/TheHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/pages/exemple-recherche.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/app/pages/start.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/app/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/packages/app/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,26 +62,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "code.cleanup.on.save": "true",
-    "git-widget-placeholder": "progress/january",
-    "last_opened_file_path": "/Users/antoinelzch/Projects/headless-2024",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "pnpm",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/Users/antoinelozach/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;progress/january&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/antoinelzch/Projects/headless-2024&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/antoinelozach/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/packages/app/public" />
@@ -106,7 +104,8 @@
       <workItem from="1706457962985" duration="5109000" />
       <workItem from="1706463955992" duration="41000" />
       <workItem from="1706464004451" duration="1959000" />
-      <workItem from="1706602909191" duration="22691000" />
+      <workItem from="1706602909191" duration="23905000" />
+      <workItem from="1706774249482" duration="123000" />
     </task>
     <servers />
   </component>

@@ -39,9 +39,9 @@ function addTag(tag: string) {
             <div class="flex flex-wrap items-start gap-2" role="group">
               <button
                 v-for="tag in tags?.data" :key="tag.id"
-                :class="{ 'bg-gray-900 text-white': search.queryTags.includes(tag.slug) }"
+                :class="[search.queryTags.includes(tag.slug) ? 'bg-gray-900 text-white' : 'bg-gray-200 text-gray-900']"
                 :title="tag.name"
-                class="py-1 px-2 bg-gray-200 text-gray-900 border-none cursor-pointer"
+                class="py-1 px-2 border-none cursor-pointer"
                 @click="addTag(tag.slug)"
               >
                 {{ tag.name }}
